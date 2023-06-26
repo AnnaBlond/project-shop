@@ -1,0 +1,534 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url(images/patt.png);
+  /* height: 100%; */
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* селектор атрибутів пишеться в квадратних дужках */
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1 {
+  /*  flex блок не повинен розжиматись*/
+  flex: 0 0 8.33333%;
+  max-width: 33333%;
+  /* 100%/12 колонок=8.3333%/ */
+}
+
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-3 {
+  /*  flex блок не повинен розжиматись*/
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.header {
+  padding: 25px 0;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.logo {
+  margin-top: 7px;
+}
+/* стилізація списку меню */
+.menu {
+  display: flex;
+}
+.menu li {
+  width: 25%;
+  /* вертикальні лінії */
+  border-left: 1px solid #2c71b8;
+}
+
+.menu li:last-child {
+  border-right: 1px solid #2c71b8;
+}
+
+.menu a {
+  display: flex;
+  height: 50px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  color: #2c71b8;
+}
+
+.menu a:hover {
+  background-color: #2c71b8;
+  color: white;
+}
+/* -- --------Products dropdown-menu-- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown:hover .arrow-down{
+  color: white;
+  background-color: #2c71b8;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  left: -1px;
+  background-color: #2c71b8;
+  color: white;
+  width: 287px;
+  padding: 17.5px 0;
+}
+
+.dropdown-menu a {
+  color: white;
+  justify-content: left;
+  height: 40px;
+  padding-left: 30px;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a:hover {
+  color: #2c71b8;
+  background-color: white;
+}
+/* ------ */
+.images-arrow-down {
+  height: 9px;
+  margin: 5px;
+}
+
+/* ---search--- */
+.search {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.search form {
+  height: 40px;
+  width: 200px;
+  border: 1px solid #2c71b8;
+  padding: 4px 4px 4px 20px;
+  display: flex;
+  /* align-items: center; */
+  margin-right: 30px;
+}
+
+.search input{
+  display: block;
+  background-color: rgba(255, 255, 255, 0);
+  border-style: none;
+  font-family: "Roboto", sans-serif;
+  width: 145px;
+  font-size: 21px;
+  color: #2c71b8;
+
+}
+.search input::placeholder {
+  color: #2c71b8;;
+}
+
+.search button{
+  border-style: none;
+  background-color: #2c71b8;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.header-shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+
+  background-color: #2c71b8;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.search .shop-button {
+ background-color: white;
+ cursor: pointer;
+ text-align: center;
+ width: 40px;
+ height: 40px;
+}
+
+.search .header-shop {
+  position: relative;
+  left: 5px;
+  top: -15px;
+}
+ /* ДЗ: 10 */
+
+ .slide3 {
+  height: 400px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  font-family: "Roboto", sans-serif;
+  font-size: 75px;
+  color: white;
+  text-align: center;
+  padding: 180px;
+
+ }
+
+ /* device type */
+.filter {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  height: 845px;
+  width: 270px;
+  padding-top: 30px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-right: 1px solid #ffffff;
+}
+
+.filter h3 {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.device-type {
+  margin-bottom: 65px;
+}
+.color {
+  margin-bottom: 65px;
+}
+.ram {
+  margin-bottom: 30px;
+}
+.filter p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 21px;
+}
+
+.filter button {
+  border: 1px solid white;
+  background-color: #2c71b8;
+  color: white;
+  height: 50px;
+  width: 210px;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+/* Main */
+/* ---------------- */
+.main-content {
+  padding-top: 30px;
+}
+
+.kroshka {
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 30px;
+}
+
+.kroshka p {
+  text-decoration: underline;
+}
+
+.kroshka a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.kroshka i {
+  margin: 0 8px;
+}
+/* --------------------- */
+.show {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.show h1 {
+  font-size: 48px;
+  display: block;
+  color: white;
+  font-weight: bold;
+}
+
+.sort-price p {
+  position: relative;
+  height: 40px;
+  width: 270px;
+  border: 1px solid white;
+  background-color: #2c71b8;
+  font-size: 21px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.dropdown-price {
+  display: none;
+  position: absolute;
+  height: 40px;
+  width: 270px;
+  padding: 0 15px 0 20;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+.sort-price p:hover {
+  background-color: white;
+  color: #2c71b8;
+}
+
+.sort-price:hover .dropdown-price {
+  display: flex;
+  flex-direction:column;
+}
+.dropdown-price p:hover {
+  display: flex;
+}
+
+.images-arrow-white {
+  height: 12px;
+  margin-left: 109px;
+}
+/* ---prise---- */
+
+/* всі форми */
+.form {
+  width: 32%;
+  border: 1px solid #dfdfdf;
+  background-color: hsla(210, 61%, 45%, 0.75);
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 20px;
+}
+
+.background p {
+  font-size: 10px;
+}
+
+.borderB {
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* ------- */
+
+.block p {
+  font-size: 21px;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.block h2 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+.block span {
+  font-weight: bold;
+}
+ 
+.price {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0 25px 0;
+}
+
+.sub {
+  vertical-align: super;
+    font-size: 24px;
+    color: white;
+}
+
+.style-butt {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  width: 210px;
+  height: 50px;
+  cursor: pointer;
+
+}
+.buttonW {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #dfdfdf;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.buttonB {
+  background-color: #2c71b8;
+  border: 1px solid #dfdfdf;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.buttonB:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----img--- */
+
+.background {
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 1px solid #dfdfdf;
+  width: 100%;
+  height: 180px;
+  display: flex;
+  flex-direction:column
+}
+/* .bgc-img {
+
+} */
+.img {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.img1 {
+  background-image: url(images/devise9-b.png);
+  }
+
+.img2 {
+  background-image: url(images/devise1-b.png);
+  }
+
+.img3 {
+  background-image: url(images/devise5-b.png);
+  }
+
+.img4 {
+background-image: url(images/devise8-b.png);
+}
+
+.img5 {
+background-image: url(images/devise6-b.png);
+}
+
+.img6 {
+background-image: url(images/devise4-b.png);
+}
+
+.img7 {
+  background-image: url(images/devise7-b.png);
+  }
+
+.img8 {
+background-image: url(images/devise3-b.png);
+}
+
+.img9 {
+  background-image: url(images/devise2-b.png);
+  }
+  
+.zoom {
+  border: 1px solid #2c71b8;
+  width: 30px;
+  padding: 3px;
+  margin: 10px;
+  text-align: end;
+  align-self: flex-end;
+}
+.like {
+  border: 1px solid #2c71b8;
+  width: 30px;
+  padding: 3px;
+  align-self: flex-end;
+  margin: 0 10px;
+}
+.basket-w {
+  margin-left: 16px;
+  width: 16px;
+}
+/*  footer */
+ .footer {
+  height: 100px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: #2c71b8;
+  text-align: center;
+  padding: 45px;
+ }
+
+ .all-forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.zoom:hover {
+  background-color: #2c71b8;
+  background-image: url(images/zoom-w.png);
+  align-self: flex-end;
+  background-repeat: no-repeat;
+}
+
+.like:hover {
+  background-color: #2c71b8;
+  background-image: url(images/like-w.png);
+  background-repeat: no-repeat;
+  align-self: flex-end;
+}
+
+.more {
+  color: white;
+  text-align: center;
+  margin-bottom: 85px;
+  font-size: 30px;
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <title>Shop project_HW 10</title>
+</head>
+
+<body>
+  <!-- ДЗ: 8-9
+- Побудувати header макету Demo Shop https://kznkv-skillup.github.io/ флекс
+https://www.photopea.com/
+- Зареєструватися на сайті github -->
+  <header class="header">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-3">
+          <div class="logo">
+            <a href="">
+              <img src="images/logo.png" alt="logo">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <nav>
+            <ul class="menu">
+              <li><a href="">Home</a></li>
+
+              <!-- ----Products---- -->
+              <li class="dropdown">
+                <a href="" class="arrow-down">Products
+                  <img class="images-arrow-down" src="images/arrow-down.svg" alt="arrow down">
+                </a>
+                <!-- <div>
+                  <img class="images-arrow-down" src="images/arrow-down.svg" alt="arrow down">
+                </div> -->
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="">Lorem ipsum dolor</a></li>
+                    <li><a href="">Lorem </a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                    <li><a href="">Lorem ipsum </a></li>
+                    <li><a href="">Lorem ipsum dolor</a></li>
+                    <li><a href="">Lorem ipsum dolor</a></li>
+                    <li><a href="">Lorem ipsum</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="">Payment</a></li>
+              <li><a href="">Shipping</a></li>
+            </ul>
+          </nav>
+          <!-- ----- Search ----- -->
+        </div>
+        <div class="search">
+          <form>
+            <input type="text" placeholder="search" />
+            <button>
+              <img src="images/search.png" alt="search">
+            </button>
+          </form>
+          <div class="header-shop">4</div>
+          <button class="shop-button">
+            <img src="images/header-shop.png" alt="shop">
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ------- Main -------- -->
+  <main>
+    <div class="slide3">
+      <div>Slide #3</div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-3">
+          <div class="filter">
+
+            <h3>DEVICE TYPE</h3>
+            <div class="device-type">
+              <input type="checkbox"> Laptop
+              <input type="checkbox"> Tablet
+            </div>
+
+            <h3>COLOR</h3>
+            <div class="color">
+              <input type="checkbox"> Black
+              <input type="checkbox"> Red
+              <input type="checkbox"> Green
+              <input type="checkbox"> Blue
+              <input type="checkbox"> Orange
+            </div>
+
+            <h3>RAM</h3>
+            <div class="ram">
+              <input type="checkbox"> 1GB
+              <input type="checkbox"> 2GB
+              <input type="checkbox"> 4GB
+              <input type="checkbox"> 6GB
+              <input type="checkbox"> 8GB
+            </div>
+
+            <div>
+              <p>Show more options ...</p>
+            </div>
+
+            <button>SUBMIT</button>
+          </div>
+        </div>
+
+        <div class="col-9">
+          <div class="main-content">
+            <div class="kroshka">
+              <a href="#">Home page</a>
+              <i>></i>
+              <a href="#">Products</a>
+              <i>></i>
+              <p>Laptops and Tablets</p>
+            </div>
+
+            <div class="show">
+              <h1>Laptops and Tablets</h1>
+
+              <div class="sort-price">
+                <p>sort by price
+                  <img class="images-arrow-white" src="images/arrow-down-white.svg" alt="arrow down">
+                </p>
+
+                <div class="dropdown-price">
+                  <p>sort by name</p>
+                  <p>sort by data</p>
+                  <p>sort by popularity</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!-- ---prise---- -->
+          <div class="all-forms">
+            <!-- block 1 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img1">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#1 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$599 <span class="sub">25</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+
+            <!-- block 2 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img2">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#2 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$1250 <span class="sub">99</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 3 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img3">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#3 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$399 <span class="sub">50</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 4 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img4">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#4 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$599 <span class="sub">25</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 5 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img5">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#5 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$1250 <span class="sub">99</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 6 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img6">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#6 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$399 <span class="sub">50</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 7 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img7">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#7 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$599 <span class="sub">25</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 8 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img8">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#8 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$1250 <span class="sub">99</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+            <!-- block 9 -->
+            <div class="form">
+
+              <div class="block">
+                <div class="text">
+                  <div class="background img img9">
+                    <img class="zoom" src="images/zoom-b.png" alt="zoom">
+                    <img class="like" src="images/like-b.png" alt="like">
+                  </div>
+                </div>
+                <h2>#9 Device Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p><span>TYPE:</span> Laptop</p>
+                <p><span>SCREEN SIZE:</span> 7 inchers</p>
+                <p><span>RAM:</span> 1GB</p>
+              </div>
+
+              <div>
+                <p class="price">$399 <span class="sub">50</span></p>
+              </div>
+
+              <div>
+                <button class="style-butt buttonB">MORE DETAILS</button>
+                <button class="style-butt buttonW">ADD TO CARD <img class="basket-w" src="images/basket-w.png"
+                    alt="basket">
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="more">
+            <p>Load more...</p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- ------- footer -------- -->
+  <footer class="footer">
+    <div class="container">&#xa9; Copiright 2017</div>
+
+
+  </footer>
+
+</body>
+
+</html>
