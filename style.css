@@ -220,7 +220,7 @@ body {
 .filter {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
-  text-align: center;
+  
   height: 845px;
   width: 270px;
   padding-top: 30px;
@@ -233,17 +233,44 @@ body {
 .filter h3 {
   font-weight: bold;
   font-size: 21px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+.block-col {
+  margin-top: 45px;
+}
+.device-type {
+  margin-bottom: 5px;
 }
 
-.device-type {
-  margin-bottom: 65px;
+/* -------------- */
+.device-type input[type="checkbox"] {
+  display: none;
 }
-.color {
-  margin-bottom: 65px;
+
+.device-type label:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 25px;
+  margin-right: 10px;
+  margin-bottom: 25px;
 }
-.ram {
-  margin-bottom: 30px;
+
+.device-type input[type="checkbox"]:checked+label:before {
+  background-color: white;
 }
+
+.device-type label {
+  cursor: pointer;
+  display: flex;
+}
+/* -------------- */
+
+
 .filter p {
   text-align: center;
   margin-bottom: 30px;
@@ -258,7 +285,9 @@ body {
   width: 210px;
   font-size: 21px;
   font-weight: bold;
+  margin-left: 25px;
 }
+
 
 /* Main */
 /* ---------------- */
@@ -366,12 +395,14 @@ body {
 /* ------- */
 
 .block p {
+  font-family: "Roboto", sans-serif;
   font-size: 21px;
   padding: 10px;
   margin-left: 15px;
 }
 
 .block h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 30px;
   font-weight: bold;
   padding: 10px;
@@ -383,6 +414,7 @@ body {
 }
  
 .price {
+  font-family: "Roboto", sans-serif;
   font-size: 48px;
   color: white;
   font-weight: bold;
@@ -397,6 +429,7 @@ body {
 }
 
 .style-butt {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 21px;
   font-weight: bold;
@@ -479,10 +512,12 @@ background-image: url(images/devise3-b.png);
 .zoom {
   border: 1px solid #2c71b8;
   width: 30px;
-  padding: 3px;
+  padding: 5px;
   margin: 10px;
   text-align: end;
   align-self: flex-end;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .like {
   border: 1px solid #2c71b8;
@@ -490,6 +525,8 @@ background-image: url(images/devise3-b.png);
   padding: 3px;
   align-self: flex-end;
   margin: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .basket-w {
   margin-left: 16px;
@@ -497,12 +534,12 @@ background-image: url(images/devise3-b.png);
 }
 /*  footer */
  .footer {
-  height: 100px;
+  height: 60px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.75);
   color: #2c71b8;
   text-align: center;
-  padding: 45px;
+  padding: 20px;
  }
 
  .all-forms {
@@ -517,6 +554,7 @@ background-image: url(images/devise3-b.png);
   background-image: url(images/zoom-w.png);
   align-self: flex-end;
   background-repeat: no-repeat;
+
 }
 
 .like:hover {
